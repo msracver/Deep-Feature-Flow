@@ -1,4 +1,4 @@
-# Deep Feature Flow
+# Deep Feature Flow for Video Recognition
 
 
 The major contributors of this repository include [Xizhou Zhu](https://github.com/einsiedler0408), [Yuwen Xiong](https://github.com/Orpine), [Jifeng Dai](https://github.com/daijifeng001), [Lu Yuan](http://www.lyuan.org/), and  [Yichen Wei](https://github.com/YichenWei).
