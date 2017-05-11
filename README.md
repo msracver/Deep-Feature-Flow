@@ -11,6 +11,7 @@ The major contributors of this repository include [Xizhou Zhu](https://github.co
 **R-FCN** is initially described in a [NIPS 2016 paper](https://arxiv.org/abs/1605.06409).
 
 ***Click image to watch our demo video***
+
 [![Demo Video on YouTube](https://media.giphy.com/media/14erFWP6f5tDVe/giphy.gif)](http://www.youtube.com/watch?v=J0rMHE6ehGw)
 [![Demo Video on YouTube](https://media.giphy.com/media/xwB5LVfIjLtS/giphy.gif)](http://www.youtube.com/watch?v=J0rMHE6ehGw)
 
