@@ -56,7 +56,7 @@ If you find Deep Feature Flow useful in your research, please consider citing:
 
 |                                 | <sub>training data</sub>     | <sub>testing data</sub> | <sub>mAP@0.5</sub> | <sub>time/image</br> (Tesla K40)</sub> | <sub>time/image</br>(Maxwell Titan X)</sub> |
 |---------------------------------|-------------------|--------------|---------|---------|--------|
-| <sub>R-FCN, ResNet-v1-101</sub>                    | <sub>ImageNet DET train + VID train</sub> | <sub>ImageNet VID validation</sub> | 74.1    | 0.271s    | 0.133s |
+| <sub>Frame baseline</br>(R-FCN, ResNet-v1-101)</sub>                    | <sub>ImageNet DET train + VID train</sub> | <sub>ImageNet VID validation</sub> | 74.1    | 0.271s    | 0.133s |
 | <sub>Deep Feature Flow</br>(R-FCN, ResNet-v1-101, FlowNet)</sub>           | <sub>ImageNet DET train + VID train</sub> | <sub>ImageNet VID validation</sub> | 73.0    | 0.073s    | 0.034s |
 
 *Running time is counted on a single GPU (mini-batch size is 1 in inference, key-frame duration length for Deep Feature Flow is 10).*
@@ -135,7 +135,7 @@ git clone https://github.com/msracver/Deep-Feature-Flow.git
 
 1. All of our experiment settings (GPU #, dataset, etc.) are kept in yaml config files at folder `./experiments/{rfcn/dff_rfcn}/cfgs`.
 
-2. Two config files have been provided so far, namely, R-FCN and Deep Feature Flow with R-FCN for ImageNet VID. We use 4 GPUs to train models on ImageNet VID.
+2. Two config files have been provided so far, namely, Frame baseline with R-FCN and Deep Feature Flow with R-FCN for ImageNet VID. We use 4 GPUs to train models on ImageNet VID.
 
 3. To perform experiments, run the python script with the corresponding config file as input. For example, to train and test Deep Feature Flow with R-FCN, use the following command
     ```
