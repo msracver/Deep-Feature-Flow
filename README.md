@@ -6,9 +6,10 @@ The major contributors of this repository include [Xizhou Zhu](https://github.co
 ## Introduction
 
 
-**Deep Feature Flow** is initially described in a [CVPR 2017 paper](https://arxiv.org/abs/1611.07715).
+**Deep Feature Flow** is initially described in a [CVPR 2017 paper](https://arxiv.org/abs/1611.07715). It provides a simple, fast, accurate, and end-to-end framework for video recognition (e.g., object detection and semantic segmentation in videos). It is worth noting that:
 
-**R-FCN** is initially described in a [NIPS 2016 paper](https://arxiv.org/abs/1605.06409).
+* Deep Feature Flow significantly speeds up video recognition by applying the heavy-weight image recognition network (e.g., ResNet-101) on sparse key frames, and propagating the recognition outputs (feature maps) to the other frames by the light-weight flow network (e.g., [FlowNet](https://arxiv.org/abs/1504.06852)).
+* The entire system is end-to-end trained for the task of video recognition, which is vital for improving the recognition accuracy. Directly adopting state-of-the-art flow estimation methods without end-to-end training would deliver noticable worse results.
 
 ***Click image to watch our demo video***
 
