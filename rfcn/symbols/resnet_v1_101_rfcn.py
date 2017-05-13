@@ -13,6 +13,7 @@ from operator_py.proposal_target import *
 from operator_py.box_annotator_ohem import *
 from operator_py.rpn_inv_normalize import *
 
+
 class resnet_v1_101_rfcn(Symbol):
     
     def __init__(self):
