@@ -24,6 +24,9 @@ os.environ['MXNET_ENABLE_GPU_P2P'] = '0'
 cur_path = os.path.abspath(os.path.dirname(__file__))
 update_config(cur_path + '/../experiments/dff_rfcn/cfgs/dff_rfcn_vid_demo.yaml')
 
+enable_cv2_imshow = True
+
+
 sys.path.insert(0, os.path.join(cur_path, '../external/mxnet', config.MXNET_VERSION))
 import mxnet as mx
 from core.tester import im_detect, Predictor
@@ -62,6 +65,7 @@ def main():
 
     # load demo data
     image_names = glob.glob(cur_path + '/../demo/ILSVRC2015_val_00007010/*.JPEG')
+    image_names.sort()
     output_dir = cur_path + '/../demo/rfcn_dff/'
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
@@ -127,15 +131,18 @@ def main():
         scales = [data_batch.data[i][1].asnumpy()[0, 2] for i in xrange(len(data_batch.data))]
 
         tic()
+        mark = ''
         if idx % key_frame_interval == 0:
             scores, boxes, data_dict, feat = im_detect(key_predictor, data_batch, data_names, scales, config)
+            mark = '+'
         else:
             data_batch.data[0][-1] = feat
             data_batch.provide_data[0][-1] = ('feat_key', feat.shape)
             scores, boxes, data_dict, _ = im_detect(cur_predictor, data_batch, data_names, scales, config)
-        time += toc()
+        time_elapsed = toc()
+        time += time_elapsed
         count += 1
-        print 'testing {} {:.4f}s'.format(im_name, time/count)
+        print 'testing {} {:.4f}s {:.4f}s {}'.format(im_name, time/count, time_elapsed, mark)
 
         boxes = boxes[0].astype('f')
         scores = scores[0].astype('f')
@@ -155,6 +162,9 @@ def main():
         out_im = draw_boxes(im, dets_nms, classes, 1)
         _, filename = os.path.split(im_name)
         cv2.imwrite(output_dir + filename,out_im)
+        if enable_cv2_imshow:
+            cv2.imshow('out_im', out_im)
+            cv2.waitKey(1)
 
     print 'done'
 
