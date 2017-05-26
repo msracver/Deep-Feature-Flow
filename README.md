@@ -154,3 +154,27 @@ Code has been tested under:
 - Windows Server 2012 R2 with 8 K40 GPUs and Intel Xeon CPU E5-2650 v2 @ 2.60GHz
 - Windows Server 2012 R2 with 4 Pascal Titan X GPUs and Intel Xeon CPU E5-2650 v4 @ 2.30GHz
 
+## FAQ
+
+Q: It says `AttributeError: 'module' object has no attribute 'MultiProposal'`.
+
+A: This is because either
+ - you forget to copy the operators to your MXNet folder
+ - or you copy to the wrong path
+ - or you forget to re-compile and install
+ - or you install the wrong MXNet
+
+<br/><br/>
+Q: I encounter `segment fault` at the beginning.
+
+A: A compatibility issue has been identified between MXNet and opencv-python 3.0+. We suggest that you always `import cv2` first before `import mxnet` in the entry script. 
+
+<br/><br/>
+Q: I find the training speed becomes slower when training for a long time.
+
+A: It has been identified that MXNet on Windows has this problem. So we recommend to run this program on Linux. You could also stop it and resume the training process to regain the training speed if you encounter this problem.
+
+<br/><br/>
+Q: Can you share your caffe implementation?
+
+A: Due to several reasons (code is based on a old, internal Caffe, port to public Caffe needs extra work, time limit, etc.). We do not plan to release our Caffe code. Since a warping layer is easy to implement, anyone who wish to do it is welcome to make a pull request.
