@@ -164,6 +164,8 @@ A: This is because either
  - or you forget to re-compile and install
  - or you install the wrong MXNet
 
+    Please print `mxnet.__path__` to make sure you use correct MXNet
+
 <br/><br/>
 Q: I encounter `segment fault` at the beginning.
 
