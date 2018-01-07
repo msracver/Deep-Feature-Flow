@@ -122,7 +122,7 @@ git clone https://github.com/msracver/Deep-Feature-Flow.git
 ## Demo
 
 
-1. To run the demo with our trained model (on ImageNet DET + VID train), please download the model manually from [OneDrive](https://1drv.ms/u/s!Am-5JzdW2XHzhqMPLjGGCvAeciQflg), and put it under folder `model/`.
+1. To run the demo with our trained model (on ImageNet DET + VID train), please download the model manually from [OneDrive](https://1drv.ms/u/s!Am-5JzdW2XHzhqMPLjGGCvAeciQflg) (for users from Mainland China, please try [Baidu Yun](https://pan.baidu.com/s/1nuPULnj)), and put it under folder `model/`.
 
 	Make sure it looks like this:
 	```
@@ -153,7 +153,7 @@ git clone https://github.com/msracver/Deep-Feature-Flow.git
 	./data/ILSVRC2015/ImageSets
 	```
 
-2. Please download ImageNet pre-trained ResNet-v1-101 model and Flying-Chairs pre-trained FlowNet model manually from [OneDrive](https://1drv.ms/u/s!Am-5JzdW2XHzhqMOBdCBiNaKbcjPrA), and put it under folder `./model`. Make sure it looks like this:
+2. Please download ImageNet pre-trained ResNet-v1-101 model and Flying-Chairs pre-trained FlowNet model manually from [OneDrive](https://1drv.ms/u/s!Am-5JzdW2XHzhqMOBdCBiNaKbcjPrA) (for users from Mainland China, please try [Baidu Yun](https://pan.baidu.com/s/1nuPULnj)), and put it under folder `./model`. Make sure it looks like this:
 	```
 	./model/pretrained_model/resnet_v1_101-0000.params
 	./model/pretrained_model/flownet-0000.params
