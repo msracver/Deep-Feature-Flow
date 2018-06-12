@@ -1,9 +1,15 @@
-# --------------------------------------------------------
-# Deformable Convolutional Networks
-# Copyright (c) 2015 Microsoft
-# Licensed under The MIT License [see LICENSE for details]
-# Modified from py-faster-rcnn (https://github.com/rbgirshick/py-faster-rcnn)
-# --------------------------------------------------------
+// ------------------------------------------------------------------
+// Deep Feature Flow
+// Copyright (c) 2015 Microsoft
+// Licensed under The MIT License
+// Written by Yuwen Xiong
+// ------------------------------------------------------------------
+// Based on:
+// Faster R-CNN
+// Copyright (c) 2015 Microsoft
+// Licensed under The MIT License
+// https://github.com/shaoqingren/faster_rcnn
+// ------------------------------------------------------------------
 
 import numpy as np
 cimport numpy as np

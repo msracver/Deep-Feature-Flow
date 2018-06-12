@@ -1,3 +1,16 @@
+# --------------------------------------------------------
+# Deep Feature Flow
+# Copyright (c) 2017 Microsoft
+# Licensed under The MIT License [see LICENSE for details]
+# Written by Yuwen Xiong
+# --------------------------------------------------------
+# Based on:
+# py-faster-rcnn
+# Copyright (c) 2015 Microsoft
+# Licence under The MIT License
+# https://github.com/rbgirshick/py-faster-rcnn
+# --------------------------------------------------------
+
 import numpy as np
 
 from cpu_nms import cpu_nms

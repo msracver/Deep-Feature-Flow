@@ -1,8 +1,14 @@
 // ------------------------------------------------------------------
-// Deformable Convolutional Networks
+// Deep Feature Flow
 // Copyright (c) 2015 Microsoft
 // Licensed under The MIT License
-// Modified from MATLAB Faster R-CNN (https://github.com/shaoqingren/faster_rcnn)
+// Written by Yuwen Xiong
+// ------------------------------------------------------------------
+// Based on:
+// Faster R-CNN
+// Copyright (c) 2015 Microsoft
+// Licensed under The MIT License
+// https://github.com/shaoqingren/faster_rcnn
 // ------------------------------------------------------------------
 
 #include "gpu_nms.hpp"

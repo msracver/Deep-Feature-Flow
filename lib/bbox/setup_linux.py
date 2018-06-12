@@ -1,9 +1,14 @@
 # --------------------------------------------------------
-# Deformable Convolutional Networks
-# Copyright (c) 2016 by Contributors
+# Deep Feature Flow
 # Copyright (c) 2017 Microsoft
-# Licensed under The Apache-2.0 License [see LICENSE for details]
-# Modified from py-faster-rcnn (https://github.com/rbgirshick/py-faster-rcnn)
+# Licensed under The MIT License [see LICENSE for details]
+# Modified by Yuwen Xiong
+# --------------------------------------------------------
+# Based on:
+# py-faster-rcnn
+# Copyright (c) 2015 Microsoft
+# Licence under The MIT License
+# https://github.com/rbgirshick/py-faster-rcnn
 # --------------------------------------------------------
 
 
