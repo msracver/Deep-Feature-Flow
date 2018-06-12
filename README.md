@@ -31,7 +31,7 @@ This is an official implementation for [Deep Feature Flow for Video Recognition]
 
 ## License
 
-© Microsoft, 2017. Licensed under an Apache-2.0 license.
+© Microsoft, 2018. Licensed under the [MIT](LICENSE) License.
 
 ## Citing Deep Feature Flow
 

@@ -1,3 +1,10 @@
+# --------------------------------------------------------
+# Deep Feature Flow
+# Copyright (c) 2017 Microsoft
+# Licensed under The MIT License [see LICENSE for details]
+# Written by Yuwen Xiong
+# --------------------------------------------------------
+
 """
 General image database
 An image database creates a list of relative image path called image_set_index and
