@@ -1,3 +1,10 @@
+# --------------------------------------------------------
+# Deep Feature Flow
+# Copyright (c) 2017 Microsoft
+# Licensed under The MIT License [see LICENSE for details]
+# Written by Yuwen Xiong
+# --------------------------------------------------------
+
 import numpy as np
 import cv2
 
