@@ -62,6 +62,7 @@ def main():
 
     # load demo data
     image_names = glob.glob(cur_path + '/../demo/ILSVRC2015_val_00007010/*.JPEG')
+    image_names.sort()
     output_dir = cur_path + '/../demo/rfcn_dff/'
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
